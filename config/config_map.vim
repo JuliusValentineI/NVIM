@@ -6,15 +6,14 @@ nnoremap <leader>> 10<C-w><
 nnoremap <leader>w :w<CR> 
 nnoremap <leader>q :q<CR>
 
-" Remap keys for gotos coc
-nmap <silent>gb <Plug>(coc-definition) 
-nmap <silent>gy <Plug>(coc-type-definition) 
-nmap <silent>gi <Plug>(coc-implementation)
-nmap <silent>gr <Plug>(coc-references)
+" Check xclip
+vnoremap <leader>y :w !xclip -selection clipboard<CR>
+nnoremap <leader>p :r !xclip -selection clipboard -o<CR>
 
 " Tabs navigation
 map <leader>h :tabprevious<CR>
 map <leader>l :tabnext<CR>
+map <leader>vs :vsp<CR>
 
 " buffers
 map <leader>ob :Buffers<CR>
