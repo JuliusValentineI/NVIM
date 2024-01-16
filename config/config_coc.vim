@@ -56,8 +56,8 @@ nmap <leader>ca  <Plug>(coc-codeaction-selected)
 let opts = {'silent': v:true, 'noremap': v:true, 'expr': v:true, 'replace_keycodes': v:false}
 
 " Mapeo de <TAB> en modo insert
-inoremap <expr> <TAB> coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "\<TAB>" : coc#refresh()
+inoremap <expr> <C-n> coc#pum#visible() ? coc#pum#next(1) : v:lua.check_back_space() ? "\<C-n>" : coc#refresh()
 
 " Mapeo de <S-TAB> en modo insert
-inoremap <expr> <S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+inoremap <expr> <C-t> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
