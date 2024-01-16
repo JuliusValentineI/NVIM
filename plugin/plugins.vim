@@ -29,5 +29,6 @@ Plug 'nvim-telescope/telescope.nvim', {'tag': '0.1.5'}
 " Ide
 Plug 'editorconfig/editorconfig-vim'
 "Plug 'easymotion/vim-easymotion' 
+Plug 'nvim-treesitter/nvim-treesitter'
 
 call plug#end()
