@@ -1,8 +1,0 @@
-{
-	"coc.preferences": {
-		"formatOnSave": false
-	},
-	"tsserver.formatOnType": true,
-	"eslint.enable": true,
-	"eslint.autoFixOnSave": true
-}
