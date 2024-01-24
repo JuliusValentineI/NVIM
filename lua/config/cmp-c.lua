@@ -31,7 +31,6 @@ cmp.setup({
   }
 })
 
-
 -- cmdline config
 cmp.setup.cmdline(':', {
 	mapping = cmp.mapping.preset.cmdline(),

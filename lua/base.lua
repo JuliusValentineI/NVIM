@@ -4,8 +4,9 @@
 
 -- Configuración de apariencia
 vim.opt.number = true
---vim.opt.relativenumber = true
---vim.opt.numberwidth = 5
+vim.opt.relativenumber = true
+vim.opt.numberwidth = 5
+
 -- Configuración de borde a la izquierda
 vim.cmd('set signcolumn=yes')  -- Habilitar signcolumn (indicadores de línea)
 
@@ -28,13 +29,6 @@ vim.opt.tabstop = 2
 -- Configuración de autoindentación
 vim.opt.autoindent = true
 
--- Configuración de color de columna y tema
---vim.opt.colorcolumn = "100"
---vim.opt.cc = "100"
---vim.g.gruvbox_contrast_dark = "hard"
---vim.o.background = "dark" -- or "light" for light mode
---vim.cmd([[colorscheme gruvbox]])
-
 -- Configuración de la barra de estado y ocultar modo
 vim.opt.laststatus = 2
 vim.opt.showmode = false
@@ -55,8 +49,7 @@ vim.api.nvim_set_keymap('n', '<leader><', '10<C-w><', { noremap = true })
 
 -- Basic config by Nvim
 vim.api.nvim_set_keymap('n', '<leader>w', ':w<CR>', { noremap = true })
---vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<A-q>', ':q<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>q', ':q<CR>', { noremap = true, silent = true })
 
 -- Check xclip
 vim.api.nvim_set_keymap('v', '<leader>y', ':w !xclip -selection clipboard<CR>', { noremap = true })
